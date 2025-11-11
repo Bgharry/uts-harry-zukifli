@@ -1,0 +1,85 @@
+
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Visualisasi Pengguna Media Sosial di Asia (2019–2024) - Harry Zulkifli</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="titles">
+        <h1>Visualisasi Pengguna Media Sosial di Asia (2019–2024)</h1>
+        <div class="subtitle">Oleh: Harry Zulkifli — Universitas Sebelas April</div>
+      </div>
+      <img src="assets/logo-unsap.png" alt="UNSAP logo" class="logo">
+    </div>
+
+    <nav class="menu" aria-label="Navigasi visualisasi">
+      <button data-target="home" class="active">Beranda</button>
+      <button data-target="line">Line</button>
+      <button data-target="bar">Bar</button>
+      <button data-target="pie">Pie</button>
+      <button data-target="hist">Histogram</button>
+      <button data-target="scatter">Scatter</button>
+      <button data-target="map">Peta Asia</button>
+    </nav>
+  </header>
+
+  <main id="content">
+    <section id="home" class="pane active">
+      <h2>Ringkasan</h2>
+      <p>Gunakan menu untuk melihat setiap visualisasi. Data bersifat simulatif dan dibuat untuk tugas visualisasi data.</p>
+    </section>
+
+    <section id="line" class="pane">
+      <h2>Tren Total Pengguna (2019–2024)</h2>
+      <div class="canvas-wrap"><canvas id="lineChart"></canvas></div>
+      <p class="desc">Grafik ini menunjukkan tren kenaikan jumlah pengguna media sosial di Asia dari tahun 2019 hingga 2024.</p>
+    </section>
+
+    <section id="bar" class="pane">
+      <h2>Jumlah Pengguna per Negara (2024)</h2>
+      <div class="controls"><label for="yearBar">Tahun: </label>
+      <select id="yearBar"></select></div>
+      <div class="canvas-wrap"><canvas id="barChart"></canvas></div>
+      <p class="desc">Perbandingan jumlah pengguna media sosial antarnegara Asia pada tahun 2024.</p>
+    </section>
+
+    <section id="pie" class="pane">
+      <h2>Proporsi Pengguna per Platform (2024)</h2>
+      <div class="canvas-wrap"><canvas id="pieChart"></canvas></div>
+      <p class="desc">Diagram ini menunjukkan proporsi pengguna tiap platform pada tahun 2024.</p>
+    </section>
+
+    <section id="hist" class="pane">
+      <h2>Histogram: Distribusi Umur Pengguna (2024)</h2>
+      <div class="canvas-wrap"><canvas id="histChart"></canvas></div>
+      <p class="desc">Distribusi persentase pengguna pada kelompok umur berbeda di tahun 2024.</p>
+    </section>
+
+    <section id="scatter" class="pane">
+      <h2>Scatter: GDP per Kapita vs Jumlah Pengguna (2024)</h2>
+      <div class="canvas-wrap"><canvas id="scatterChart"></canvas></div>
+      <p class="desc">Scatter plot membandingkan GDP per kapita suatu negara dengan jumlah pengguna media sosial (2024).</p>
+    </section>
+
+    <section id="map" class="pane">
+      <h2>Peta Choropleth (Asia) - 2024</h2>
+      <div id="asia_map" style="width:100%;height:520px"></div>
+      <p class="desc">Peta menunjukkan jumlah pengguna per negara di Asia (tahun 2024).</p>
+    </section>
+  </main>
+
+  <footer>
+    <div>© 2025 Harry Zulkifli – Fakultas Teknologi Informasi, Universitas Sebelas April (UNSAP)</div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
